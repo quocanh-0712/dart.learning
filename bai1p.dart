@@ -2,14 +2,19 @@
 
 import 'dart:io';
 
-void main() {
-  stdout.write('Nhập số a:');
-  int a = int.parse(stdin.readLineSync()!);
-
+total(var n) {
   var sum = 0;
 
-  for (int i = 0; i <= a; i++) {
+  for (int i = 0; i <= n; i++) {
     sum += i;
   }
+  return sum;
+}
+
+void main() {
+  stdout.write('Nhập số n:');
+  int n = int.parse(stdin.readLineSync()!);
+  var sum = total(n);
   print('Tổng của dãy số là $sum');
 }
+
