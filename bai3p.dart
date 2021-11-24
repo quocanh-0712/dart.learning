@@ -8,7 +8,7 @@ void main() {
   var tach = 0;
   while (n != 0) {
     tach = n % 10; //cách chia lấy dư , 1234.5 => n = 5
-    if (tach % 2 != 0) {
+    if (tach % 2 !=  0 && tach <5) {
       sum += tach; // sum = sum + n
     }
     n = n ~/ 10; // cách chia lấy phần nguyên 1234.5 => n = 1234
